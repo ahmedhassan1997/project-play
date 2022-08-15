@@ -1,0 +1,108 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: #00001a;
+  display: flex;
+  justify-content: center;
+}
+body::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(250, 120, 30);
+  clip-path: circle(180px at 950px);
+  z-index: -2;
+}
+#sesion{
+  width: 80%;
+  height: 80vh;
+  background: rgba(255, 255, 254, 0.1);
+  margin-top: 60px;
+  border-radius: 20px;
+}
+#sesion .navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+  padding: 15px 20px;
+}
+
+#sesion nav li{
+  display: inline-block;
+  margin: 30px 0;
+}
+
+#sesion nav li a{
+  color: white;
+  text-decoration: none;
+  padding: 0 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+}
+.navbar img{
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+.img-txt{
+  display: flex;
+  justify-content: space-between;
+}
+.txt-h-p{
+  color: rgb(250, 247, 247);
+  width: 50%;
+  padding: 0 30px;
+  text-align: center;
+}
+.txt-h-p h1{
+  font-size: 40px;
+}
+.txt-h-p h1 span{
+  font-size: 30px;
+}
+
+.txt-h-p p{
+  margin-top: 10px;
+  font-size: 20px;
+}
+.photo{
+  width: 250px;
+  position: relative;
+  bottom: 50px;
+  right: 200px;
+}
+.photo img{
+  width: 500px;
+}
+.add{
+  margin-top: 30px;
+  text-transform: uppercase;
+  transition: 0.6s;
+}
+.add a{
+ 
+ text-decoration: none;
+ color: rgb(0, 0, 0);
+ background: rgb(230, 115, 7);
+ padding: 10px;
+ border-radius: 10px;
+ font-weight: 600;
+ font-size: 25px;
+}
+
+.add a:hover{
+  background: rgb(230, 115, 8);
+}
+.add:hover{
+  transform: scale(1.2);
+}
+
+#sesion nav li a:hover{
+  color: rgb(255, 0, 0);
+}
